@@ -34,7 +34,7 @@ public class CrazyCatLady {
 		try {
 			URI uri = new URI(videoURL);
 			java.awt.Desktop.getDesktop().browse(uri);
-		} catch (Exception e) {
+} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

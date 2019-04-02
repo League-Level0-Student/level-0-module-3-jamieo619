@@ -5,25 +5,20 @@ import javax.swing.JOptionPane;
 public class AreYouHappy {
 public static void main(String[] args) {
 	String happy = JOptionPane.showInputDialog("Are You Happy");
+	String doYou;
 	
-	String doYou = null;
-	if (happy == "yes") {
+	if(happy == "yes") {
+		JOptionPane.showMessageDialog(null,"KEEP DOING WHAT YOU'RE DOING");
+	}
+	
+	if(happy == "no") {
 		doYou = JOptionPane.showInputDialog("Do you want to be happy?");
-		if (doYou == "yes" ) {
-			JOptionPane.showMessageDialog(null,"Keep Doing What You're Doing...");
-			
+		if(doYou == "yes") {
+			JOptionPane.showMessageDialog(null,"CHANGE SOMETHING");
+		}else{
+			JOptionPane.showMessageDialog(null,"KEEP DOING WHAT YOU'RE DOING");
 		}
-		else{
-			JOptionPane.showMessageDialog(null,"Change Something...");
-		}
-		
 	}
-	else {
-		
-		JOptionPane.showMessageDialog(null,"Keep Doing What You're Doing...");
-		
-	}
-	
 	
 }
 }
