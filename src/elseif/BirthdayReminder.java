@@ -18,11 +18,11 @@ public class BirthdayReminder {
 		// 2. Find out which birthday the user wants and and store their response in a variable
 		String whosBirthday = JOptionPane.showInputDialog("Who's birthday would you like to know?");
 		// 3. Print out what the user typed
-		if(whosBirthday == "mom") {
+		if(whosBirthday.equals("moms")) {
 			JOptionPane.showMessageDialog(null,momsBirthday);
-		}else if(whosBirthday == "dad") {
+		}else if(whosBirthday.equals("dads")) {
 			JOptionPane.showMessageDialog(null,dadsBirthday);
-		}else if(whosBirthday == "your") {
+		}else if(whosBirthday.equals("yours")) {
 			JOptionPane.showMessageDialog(null,myBirthday);
 		}
 		// 4. if user asked for "mom"
